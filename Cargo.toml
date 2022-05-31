@@ -1,0 +1,10 @@
+[workspace]
+
+members = ["columnq", "columnq-cli", "roapi-http"]
+
+[profile.dev]
+split-debuginfo = "unpacked"
+
+[profile.release]
+lto = true
+codegen-units = 1
