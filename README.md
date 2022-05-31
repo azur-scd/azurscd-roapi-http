@@ -22,15 +22,15 @@ The goal of using ROAPI is to quickly and easily implement a middleware of GET A
 
 ### Create image
 
-'''
+```
 docker build  -t azurscd/roapi-http:latest .
-'''
+```
 
 The exposed port is 8084 and the /datasets and /congig folders can be binded as volumes in the container.
 
 
 ### Run container
 
-'''
+```
 docker run --name roapi-http -t -v YOUR_PATH/config:/config -v YOUR_PATH/datasets:/datasets -p 8084:8084 azurscd/roapi-http:latest
-'''
+```
