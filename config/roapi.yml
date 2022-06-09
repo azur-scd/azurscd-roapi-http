@@ -17,7 +17,7 @@ tables:
     option:
       format: "csv"
   - name: "bso_publis_dedup_with_oa_20220504"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/2022-05-04/publis_uniques_doi_oa_data.csv"
+    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/07_model_output/2022-05-04/publis_uniques_doi_oa_data_with_bsoclasses.csv"
     option:
       format: "csv"
   - name: "bso_publis_all_with_affil_20220504"
@@ -28,7 +28,11 @@ tables:
     uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/referentiel_structures.json"
     option:
       format: "json"      
-  - name: "bso_theses_20220530"
+  - name: "bso_theses_uca_20220530"
     uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_theses/data/03_primary/2022-05-30/theses_uca_processed.csv"
+    option:
+      format: "csv"
+  - name: "bso_theses_fr_20220530"
+    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_theses/data/03_primary/2022-05-30/theses_fr_processed.csv"
     option:
       format: "csv"
