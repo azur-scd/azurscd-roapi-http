@@ -27,6 +27,10 @@ tables:
   - name: "referentiel_structures"
     uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/referentiel_structures.json"
     option:
+      format: "json" 
+  - name: "referentiel_publis_disciplines"
+    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/bso_classification.json"
+    option:
       format: "json"      
   - name: "bso_theses_uca_20220530"
     uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_theses/data/03_primary/2022-05-30/theses_uca_processed.csv"
