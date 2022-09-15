@@ -1,42 +1,42 @@
 addr: 0.0.0.0:8084
 tables:
   - name: "bso_publis_dedup_with_oa_20201130"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/2020-11-30/publis_uniques_doi_oa_data.csv"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_publis_scopus/03_primary/2020-11-30/publis_uniques_doi_oa_data.csv"
     option:
       format: "csv"
   - name: "bso_publis_all_with_affil_20201130"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/2020-11-30/publis_all_with_affiliations_data.csv"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_publis_scopus/03_primary/2020-11-30/publis_all_with_affiliations_data.csv"
     option:
       format: "csv"
   - name: "bso_publis_dedup_with_oa_20210914"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/2021-09-14/publis_uniques_doi_oa_data.csv"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_publis_scopus/03_primary/2021-09-14/publis_uniques_doi_oa_data.csv"
     option:
       format: "csv"
   - name: "bso_publis_all_with_affil_20210914"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/2021-09-14/publis_all_with_affiliations_data.csv"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_publis_scopus/03_primary/2021-09-14/publis_all_with_affiliations_data.csv"
     option:
       format: "csv"
-  - name: "bso_publis_dedup_with_oa_20220504"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/07_model_output/2022-05-04/publis_uniques_doi_oa_data_with_bsoclasses.csv"
+  - name: "bso_publis_dedup_with_oa_20220829"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_publis_scopus/08_reporting/2022-08-29/publis_uniques_doi_oa_data_with_bsoclasses_complete.csv"
     option:
       format: "csv"
-  - name: "bso_publis_all_with_affil_20220504"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/2022-05-04/publis_all_with_affiliations_data.csv"
+  - name: "bso_publis_all_with_affil_20220829"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_publis_scopus/08_reporting/2022-08-29/publis_all_with_affiliations_data.csv"
     option:
       format: "csv"
   - name: "referentiel_structures"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/referentiel_structures.json"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_publis_scopus/03_primary/referentiel_structures.json"
     option:
       format: "json" 
   - name: "referentiel_publis_disciplines"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_publis_scopus/data/03_primary/bso_classification.json"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_publis_scopus/03_primary/bso_classification_mapping.json"
     option:
       format: "json"      
   - name: "bso_theses_uca_20220530"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_theses/data/03_primary/2022-05-30/theses_uca_processed.csv"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_theses/03_primary/2022-05-30/theses_uca_processed.csv"
     option:
       format: "csv"
   - name: "bso_theses_fr_20220530"
-    uri: "https://raw.githubusercontent.com/azur-scd/prefect-flows/main/flows/bso_theses/data/03_primary/2022-05-30/theses_fr_processed.csv"
+    uri: "https://raw.githubusercontent.com/azur-scd/dagster-workflows/main/app/bso_theses/03_primary/2022-05-30/theses_fr_processed.csv"
     option:
       format: "csv"
